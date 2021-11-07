@@ -1,0 +1,8 @@
+17:37:56.210 [main] INFO  resources.Base - driver is initialized
+17:38:03.851 [main] INFO  resources.Base - landed on the main page
+21:49:42.460 [TestNG-tests-2] INFO  resources.Base - driver is initialized
+21:49:57.320 [TestNG-tests-2] INFO  resources.Base - landed on the main page
+18:58:20.804 [main] INFO  resources.Base - driver is initialized
+18:58:33.812 [main] INFO  resources.Base - landed on the main page
+19:14:22.996 [main] INFO  resources.Base - driver is initialized
+19:14:36.781 [main] INFO  resources.Base - landed on the main page

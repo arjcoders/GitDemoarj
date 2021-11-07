@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+ <Properties>
+<Property name="basePath">./logs</Property>
+</Properties>
+  <Appenders>
+  <RollingFile name="File" fileName="${basePath}/prints.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+     <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+      <SizeBasedTriggeringPolicy size="500" />
+          </RollingFile>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Root level="trace">
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>
+
+
+<!--  here we have given level = "trace" which we print all the logs in the console 
+      in appenders we have given name ="console" as the place where output will be print
+      properties tag has name = basepath which suggests that the we create the logs folder on the project level
+      which helps the any user to straight away head to the file irrespective of the path, in real time project you can't hardcore 
+      your path ,because it doesnot work on other machines.
+      here prints.log is the file name , file pattern suggest the pattern log4j  uses to print the new file,
+      which is created by log4j if the size exceeds the 500kb 
+      root refers to all the test cases in the project level.. -->

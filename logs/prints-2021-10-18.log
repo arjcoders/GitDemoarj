@@ -1,0 +1,7 @@
+19:59:18.151 [main] INFO  resources.Base - successfully validated navigation bar
+21:07:10.834 [main] INFO  resources.Base - driver is initialized
+21:07:16.241 [main] INFO  resources.Base - landed on the main page
+21:07:16.596 [main] INFO  resources.Base - succesfully validated text messages
+21:07:17.719 [main] INFO  resources.Base - successfully validated navigation bar
+16:17:03.667 [main] INFO  resources.Base - driver is initialized
+16:17:12.772 [main] INFO  resources.Base - landed on the main page

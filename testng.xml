@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+<listener class-name = "Academy.Listeners"/>
+<!-- This about passing the information of the listeners class to the testng.xml file so the control transfers to the listeners on requirement. -->
+
+</listeners>
+    <test thread-count="5" name=" app Test">
+      <classes>
+      <class name="Academy.AppTest"/>
+       </classes>
+     </test>
+      
+      <test thread-count="5" name="validating the title">
+      <classes>
+      <class name="Academy.titleValidation"/>
+      </classes>
+      </test>
+      
+      <test thread-count="5" name="validating homepage">
+      <classes>
+      <class name="Academy.Homepage"/>
+      </classes>
+      </test>   
+      
+<!-- Test -->
+  </suite> <!-- Suite -->
+  
+   <!--  test thread-count="5" name="Test"  here as of now its working as a single testcase unit. thus all our browser are not
+   closing one by one. so for that issue , we will take each class into a test unit so that it gets treated as single test case.>
+    <classes>
+      <class name="Academy.AppTest"/>
+      <class name="Academy.titleValidation"/>
+      <class name="Academy.Homepage"/>
+    </classes -->
+  
+ 
