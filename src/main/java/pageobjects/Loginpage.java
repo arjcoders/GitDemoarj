@@ -16,6 +16,8 @@ public class Loginpage {
 	public Loginpage(WebDriver driver3)
 	{
 		this.driver= driver3;
+		System.out.println("helo");
+		System.out.println("hi");
 	}
 	
 	
