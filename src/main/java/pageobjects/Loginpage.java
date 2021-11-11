@@ -18,6 +18,11 @@ public class Loginpage {
 		this.driver= driver3;
 		System.out.println("helo");
 		System.out.println("hi");
+		System.out.println("arjun");
+
+		System.out.println("singh");
+
+		System.out.println("bangari");
 	}
 	
 	
